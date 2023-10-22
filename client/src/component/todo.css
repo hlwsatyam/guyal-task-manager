@@ -1,0 +1,47 @@
+
+
+li {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e49898;
+    border-radius: 1rem;
+    list-style: none;
+    text-align: left;
+    
+}
+
+li > span {
+    font-size: 16px;
+    padding: 0 10px;
+    color: #000;
+    display: inline-block;
+    font-size : 18px;
+    text-transform : capitalize;
+    text-overflow: ellipsis;
+    max-width: 45%;
+    font-family: 'Courier New';
+    color: #000000;
+}
+
+button {
+    padding: 2px 5px;
+    background: #ff0000;
+    border: 1px solid #777;
+    border-radius: 20%;
+    color: #fff;
+    text-transform: uppercase;
+    cursor:pointer !important;
+}
+
+.body{
+
+        width: 100%;
+        height: auto;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size: cover;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/005/697/400/non_2x/white-clipboard-task-management-todo-check-list-efficient-work-on-project-plan-fast-progress-level-up-concept-assignment-and-exam-productivity-solution-icon-3d-render-on-white-background-vector.jpg");
+   
+}
