@@ -22,7 +22,7 @@ app.post("/register", userAuth.register);
 // database Connections
 const ConnectionDb = async () => {
   mongoose
-    .connect(process.env.mongo_url)
+    .connect('mongodb+srv://EkLinkDB:20172522@cluster0.fw8z7td.mongodb.net/')
     .then(() => {
       console.log("Mongodb Connected");
     })
