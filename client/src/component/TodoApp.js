@@ -17,7 +17,7 @@ const TodoApp = () => {
   const handleAddTodo = async () => {
     if (isUpdateStart) {
       await axios
-        .post("/todo/update", {
+        .post("https://guyal-backend-api-todotask-with-user.onrender.com/todo/update", {
           Todoid: currpdId,
           isCompleted,
           description: newTodoDesc,
@@ -33,7 +33,7 @@ const TodoApp = () => {
     } else {
       if (newTodoText.trim() !== "") {
         await axios
-          .post("/todo/create", {
+          .post("https://guyal-backend-api-todotask-with-user.onrender.com/todo/create", {
             id: localStorage.getItem("user"),
             isCompleted,
             description: newTodoDesc,
@@ -58,7 +58,7 @@ const TodoApp = () => {
 
   const handleDeleteTodo = async (item) => {
     await axios
-      .post("/todo/delete", {
+      .post("https://guyal-backend-api-todotask-with-user.onrender.com/todo/delete", {
         Todoid: item._id,
       })
       .then((res) => {});
@@ -67,7 +67,7 @@ const TodoApp = () => {
   useEffect(() => {
     const getTodos = async () => {
       await axios
-        .post("/todo", { id: localStorage.getItem("user") })
+        .post("https://guyal-backend-api-todotask-with-user.onrender.com/todo", { id: localStorage.getItem("user") })
         .then((res) => {
           setTodos(res.data.user.todo);
         });
@@ -88,7 +88,7 @@ const TodoApp = () => {
           >
             <h6>Add Your Todays Task </h6>
           </marquee>
-
+ 
           <div>
             <input
               className="bg-white border text-center "

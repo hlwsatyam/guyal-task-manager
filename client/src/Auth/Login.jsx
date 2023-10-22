@@ -20,7 +20,7 @@ function Login() {
   const handleSubmit = async (event) => {
     //Prevent page reload
     event.preventDefault();
-    let response = await axios.post("/login", {
+    let response = await axios.post("https://guyal-backend-api-todotask-with-user.onrender.com/login", {
       email: user.email,
       password: user.password,
     });
